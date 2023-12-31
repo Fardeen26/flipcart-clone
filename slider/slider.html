@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="https://kit.fontawesome.com/dc661c04eb.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            overflow: hidden;
+        }
+        .image1{
+            width: 100vw; 
+            /* animation: slider1 8s  infinite  ; */
+             
+        }
+        .image2{
+            width: 100vw; 
+            /* animation: slider2 4s  infinite  ; */
+            
+        } 
+        .image3{
+            width: 100vw;   
+             /* animation: slider3 8s  infinite  ;  */
+             
+        }
+
+        @keyframes slider1 {
+            0%{
+                    transform: translatex(0vw);
+            }
+            100%{
+                transform: translatex(-300vw);
+            }
+
+        } @keyframes slider2 {
+            0%{
+                    transform: translatex(100vw);
+            }
+            100%{
+                transform: translatex(-100vw);
+            }
+
+        } @keyframes slider3 {
+            0%{
+                    transform: translatex(300vw);
+            }
+            100%{
+                transform: translatex(-200vw);
+            }
+
+        }  
+
+        i{
+            width: 50px;
+        }
+        .moon-image{
+            position: relative;
+            /* padding: 10px 1000px; */
+        }
+        p{
+            position: relative;
+        }
+        p::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            color: black;
+            background-color:red;
+            position: absolute;
+            left: 0;
+            /* bottom: -6; */
+            cursor: pointer;
+            top: 16px;
+            border-radius: 100px;
+        }
+        ::after:hover{
+            width: 3%;
+            cursor: pointer;
+        }
+
+        .img-hover:hover{
+            transform: scale(0.1);
+        }
+
+        .car img{
+            margin: auto;
+            width: 100%;
+            height: 90vh;
+        }
+
+        /* .car img:hover{
+            transform: scale(0.99);
+        } */
+        
+        img:hover{
+            transform: scale(0.99);
+            mask-image: linear-gradient(#000, rgba(0,0,0,0));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img1 img-hover"><img class="image1" src="logo-one.webp" alt=""></div>
+        <div class="img2 img-hover"><img class="image2" src="logo-two.webp" alt=""></div>
+        <div class="img3 img-hover"><img class="image3" src="logo-three.webp" alt=""></div>
+    </div>
+
+    <div class="car">
+    <img src="photo-car.avif" alt="" >
+</div>
+
+    <div><i class="fa-solid fa-moon moon"></i></div>
+
+    <div class="moon-image"><p>Fardeen</p></div>
+</body>
+<!-- <script src="https://kit.fontawesome.com/dc661c04eb.js" crossorigin="anonymous"></script> -->
+</html>

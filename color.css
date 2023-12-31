@@ -1,0 +1,45 @@
+.item-heading-1 {
+
+    background-color: #2874f0;
+    color: white;
+    margin-top: 0px;
+    padding: 60px 16px 0px 13px;
+    margin-left: 5px;
+}
+
+.item-heading-2 {
+    background-color: #2874f0;
+    color: white;
+    margin-top: 0px;
+    padding: 0px 42px 50px 40px;
+    margin-left: 5px;
+}
+
+.item-heading-3 {
+    background-color: #2874f0;
+    color: white;
+    margin-top: 0px;
+    padding: 70px 41px 0px 37px;
+    margin-left: 5px;
+}
+
+.item-heading-4 {
+    background-color: #2874f0;
+    color: white;
+    padding: 69px 40px 0 27px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.item-heading-5 {
+    background-color: #2874f0;
+    color: white;
+    margin-top: 0px;
+    padding: 78px 37px 0px 35px;
+    margin-left: 5px;
+}
+
+.scale:hover {
+
+    transform: scale(1.1);
+}
